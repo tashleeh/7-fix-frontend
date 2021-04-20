@@ -1,0 +1,40 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: ['plugin:react/recommended'],
+
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: ['react'],
+  rules: {
+    'prettier/prettier': ['error'],
+    'space-in-parens': [0, 'always'],
+    curly: ['error', 'all'],
+    'computed-property-spacing': [2, 'always'],
+    'no-multiple-empty-lines': [2, { max: 1, maxEOF: 0, maxBOF: 0 }],
+    quotes: [1, 'single', 'avoid-escape'],
+    'no-use-before-define': [2, { functions: false }],
+    'react/display-name': 'off',
+    semi: ['error'],
+    'prefer-const': 1,
+    'react/prefer-es6-class': 0,
+    'react/jsx-filename-extension': 0,
+    'react/prop-types': [1],
+    'react/no-array-index-key': [1],
+    'class-methods-use-this': [1],
+    'no-undef': [2],
+    'no-case-declarations': [1],
+    'no-return-assign': [1],
+    'no-param-reassign': [1],
+    'no-shadow': [1],
+    camelcase: [1],
+    'no-underscore-dangle': [0, 'always'],
+  },
+}
